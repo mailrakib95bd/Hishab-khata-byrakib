@@ -1,0 +1,11 @@
+{
+  "@@locale": "bn",
+  "appName": "হিসাব খাতা BD",
+  "@appName": {
+    "description": "অ্যাপের প্রধান নাম"
+  },
+  "homeTitle": "হিসাব খাতা BD - হোম পেজ",
+  "@homeTitle": {
+    "description": "হোম পেজের টাইটেল"
+  }
+}
