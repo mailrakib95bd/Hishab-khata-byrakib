@@ -16,7 +16,7 @@ class LedgerScreen extends ConsumerWidget {
         centerTitle: true,
       ),
       body: transactions.isEmpty
-          const Center(
+          ? const Center(
               child: Text(
                 'কোনো লেনদেন পাওয়া যায়নি!\nনতুন লেনদেন যোগ করুন।',
                 textAlign: TextAlign.center,
@@ -54,7 +54,6 @@ class LedgerScreen extends ConsumerWidget {
             ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // টেস্টের জন্য একটি ডামি ট্রানজাকশন যোগ করা হচ্ছে
           final newTx = TransactionModel(
             id: DateTime.now().millisecondsSinceEpoch.toString(),
             title: 'নমুনা হিসাব',
