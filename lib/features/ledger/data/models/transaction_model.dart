@@ -1,4 +1,4 @@
-import 'cloud_firestore/cloud_firestore.dart'; // যদি ক্লাউড ফায়ারস্টোর ব্যবহার হয়
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 /// হিসাব খাতা লেনদেন ডেটা মডেল (PRD অনুযায়ী)
 class TransactionModel {
@@ -35,7 +35,7 @@ class TransactionModel {
     );
   }
 
-  // Firestore-এ ডেটা সেভ বা রাইট করার জন্য
+  // Firestore-এ ডেটা সেভ করার জন্য
   Map<String, dynamic> toMap() {
     return {
       'title': title,
